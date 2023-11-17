@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Agenda</title>
+    <link
+      rel="shortcut icon"
+      href="img/arti-logo-palembang2.jpeg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="script.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/ninja-naruto" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/poppins");
+      #slide-1:target ~ .slider {
+        margin-left: 0px;
+      }
+
+      #slide-2:target ~ .slider {
+        margin-left: -100%;
+      }
+
+      #slide-3:target ~ .slider {
+        margin-left: -200%;
+      }
+
+      #slide-4:target ~ .slider {
+        margin-left: -300%;
+      }
+
+      .navi a {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        background-color: #dedede;
+        font-size: 0%;
+        border-radius: 60%;
+        margin: 3px;
+        transition: 0.8s;
+      }
+
+      .navi a:hover {
+        background-color: #444;
+      }
+
+      .wrapper {
+        width: 600px;
+        margin: auto;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .slider-container {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .slider {
+        width: 100%;
+        display: flex;
+        transition: 1.5s;
+      }
+
+      .slider img {
+        width: 100%;
+      }
+
+      .gambar-agenda {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+      span {
+        color: red;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: white;
+        color: #333;
+        min-height: 2000px;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #444;
+        color: white;
+        padding: 0.5rem;
+        text-align: center;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 1rem;
+      }
+
+      section {
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .img {
+        margin: auto;
+        background-color: #fff;
+        padding: 2rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        max-width: 450px;
+        height: 400px;
+      }
+
+      .img img {
+        max-width: 100%;
+        border-radius: 6px;
+        margin-bottom: 1rem;
+        border: 2px solid #444;
+      }
+
+      .img h2 {
+        color: #333;
+        margin-bottom: 1rem;
+      }
+
+      .img p {
+        color: #666;
+        line-height: 1.8;
+      }
+
+      h3 {
+        text-align: center;
+        margin-top: 2rem;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">
+        <img
+          src="img/arti-logo-palembang2.jpeg"
+          width="40"
+          height="40"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        kecamatan<span>sako</span>.</a
+      >
+
+      <div class="navbar-nav">
+        <a href="index.html">home</a>
+        <a href="agenda.html">agenda</a>
+        <a href="keluhan.html">Form Pengaduan</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="keluhan.html" id="keluhan-masyarakat"
+          ><i data-feather="frown"></i
+        ></a>
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <section style="padding-top: 100px">
+      <h2 style="font-family: 'Poppins', sans-serif">Agenda</h2>
+
+      <div class="wrapper">
+        <div class="slider-container">
+          <span id="slide-1"></span>
+          <span id="slide-2"></span>
+          <span id="slide-3"></span>
+          <span id="slide-4"></span>
+          <div class="slider">
+            <img src="img/1.jpeg" alt="Gambar 1" />
+            <img src="img/2.jpeg" alt="Gambar 2" />
+            <img src="img/3.jpeg" alt="Gambar 3" />
+            <img src="img/4.jpeg" alt="" />
+          </div>
+        </div>
+        <script src="script.js"></script>
+        <div class="navi">
+          <a href="#slide-1">1</a>
+          <a href="#slide-2">2</a>
+          <a href="#slide-3">3</a>
+          <a href="#slide-4">4</a>
+        </div>
+      </div>
+
+      <p>
+        Camat <span>Sako</span> Dr.Amiruddin Sandy, S.STP., M.Si Membuka Rapat
+        Koordinasi Fasilitator dalam rangka Forum Konsultasi Publik (FKP)
+        Regsasek 2023 bersama Fasilitator dan Asisten Fasilitator. <br />
+        Kamis, 13 April 2023
+      </p>
+    </section>
+
+    <h2 style="font-family: 'Poppins', sans-serif; text-align: center">
+      Kegiatan gotong royong
+    </h2>
+
+    <img
+      src="img/WhatsApp Image 2023-08-11 at 00.18.54.jpeg"
+      alt=""
+      style="
+        width: 600px;
+        height: 300px;
+        margin-top: 1.5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      "
+    />
+
+    <p style="text-align: center; margin-top: 1rem">
+      Kegiatan Gotong Royong <br />
+
+      Tingkat Kecamatan Berlokasi di Komplek RSS B RT.87,88,89,90 RW.33
+      Kelurahan Sako Kecamatan <span>Sako</span> Kota Palembang. <br />
+
+      Minggu, 21 Mei 2023
+    </p>
+
+    <h2 style="font-family: 'Poppins', sans-serif; text-align: center">
+      Kegiatan lainnya
+    </h2>
+
+    <img
+      src="img/d.jpeg"
+      alt=""
+      style="
+        width: 600px;
+        height: 300px;
+        margin-top: 1.5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      "
+    />
+
+    <p style="text-align: center; margin-top: 1rem">
+      Camat <span>Sako</span> Bpk. Dr. Amiruddin Sandy,S STP.,M.Si Menghadiri
+      Kegiatan Penyerahan Hasil Pembuatan Jembatan, Pagar dan Gapura Taman Makam
+      Bahagia Pepabri Sako Palembang. <br />
+      Rabu, 02 Agustus 2023
+    </p>
+
+    <footer
+      style="
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #010101;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+      "
+    >
+      Creator &copy; 2023 Syauqi Yahya. 4MIC.
+    </footer>
+  </body>
+</html>
